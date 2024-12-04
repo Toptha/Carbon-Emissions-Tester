@@ -1,7 +1,7 @@
 public class Household {
     private String householdId;
     private int numberOfResidents;
-    private float monthlyElectricityUsage;
+    float monthlyElectricityUsage;
     public Household(String householdId, int numberOfResidents, float monthlyElectricityUsage) {
         this.householdId=householdId;
         this.numberOfResidents=numberOfResidents;

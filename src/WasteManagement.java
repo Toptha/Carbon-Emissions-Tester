@@ -1,7 +1,7 @@
 public class WasteManagement {
     private String wasteId;
     private String wasteType;
-    private float quantityGenerated;
+    float quantityGenerated;
     public WasteManagement(String wasteId, String wasteType, float quantityGenerated) {
         this.wasteId = wasteId;
         this.wasteType = wasteType;

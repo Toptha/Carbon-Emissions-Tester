@@ -1,7 +1,7 @@
 public class Policy {
     private String policyId;
     private String policyName;
-    private float emissionReductionGoal;
+    float emissionReductionGoal;
     public Policy(String policyId, String policyName, float emissionReductionGoal) {
         this.policyId=policyId;
         this.policyName=policyName;

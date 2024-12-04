@@ -1,6 +1,6 @@
 public class CarbonCredit {
     private String creditId;
-    private float creditAmount;
+    float creditAmount;
     public CarbonCredit(String creditId, float creditAmount) {
         this.creditId=creditId;
         this.creditAmount=creditAmount;

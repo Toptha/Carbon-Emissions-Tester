@@ -2,8 +2,8 @@ public class Industry {
     private String industryId;
     private String industryName;
     private String industryType;
-    private float annualEnergyConsumption;
-    private float annualCarbonEmissions;
+    float annualEnergyConsumption;
+    float annualCarbonEmissions;
     public Industry(String industryId, String industryName, String industryType,
                     float annualEnergyConsumption, float annualCarbonEmissions) {
         this.industryId=industryId;

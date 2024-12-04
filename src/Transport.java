@@ -1,7 +1,7 @@
 public class Transport {
     private String systemId;
     private String type;
-    private int dailyPassengers;
+    int dailyPassengers;
     public Transport(String systemId, String type, int dailyPassengers) {
         this.systemId=systemId;
         this.type=type;

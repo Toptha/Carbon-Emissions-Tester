@@ -1,7 +1,7 @@
 public class AirQuality {
     private String recordId;
     private String location;
-    private float pm25Level;
+    float pm25Level;
     public AirQuality(String recordId, String location, float pm25Level) {
         this.recordId=recordId;
         this.location=location;

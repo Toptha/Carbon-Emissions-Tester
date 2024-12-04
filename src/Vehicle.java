@@ -2,11 +2,11 @@ public class Vehicle {
     private String vehicleId;
     private String manufacturer;
     private String model;
-    private String fuelType;
-    private float engineSize;
-    private int yearOfManufacture;
-    private float averageMileage;
-    private float emissionRate;
+    String fuelType;
+    float engineSize;
+    int yearOfManufacture;
+    float averageMileage;
+    float emissionRate;
     public Vehicle(String vehicleId, String manufacturer, String model, String fuelType,
                    float engineSize, int yearOfManufacture, float averageMileage, float emissionRate) {
         this.vehicleId=vehicleId;
