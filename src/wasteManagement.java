@@ -28,7 +28,7 @@ class IndustrialWaste extends Waste {
     IndustrialWaste(double weight, String material) {
         super("Industrial", weight, material);
     }
-
+ 
     @Override
     public double calculateEmissions() {
         return super.calculateEmissions()*1.5;
