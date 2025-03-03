@@ -1,80 +1,79 @@
+
 import java.util.Scanner;
-class Waste {
+abstract class Waste {
     String type;
     double weight;
     String material;
-
     Waste(String type, double weight, String material) {
         this.type=type;
         this.weight=weight;
         this.material=material;
     }
-
-    public double calculateEmissions() {
-        return weight*getMaterialFactor();
-    }
-
-    private double getMaterialFactor() {
+    public abstract double calculateEmissions();
+    public double getMaterialFactor() {
         switch (material.toLowerCase()) {
-            case "plastic": return 3.0;
-            case "metal": return 2.0;
-            case "organic": return 1.0;
-            default: return 1.5;
+            case "plastic": 
+                return 3.0;
+            case "metal": 
+                return 2.0;
+            case "organic": 
+                return 1.0;
+            default: 
+                return 1.5;
         }
     }
 }
-
 class IndustrialWaste extends Waste {
     IndustrialWaste(double weight, String material) {
         super("Industrial", weight, material);
     }
- 
     @Override
     public double calculateEmissions() {
-        return super.calculateEmissions()*1.5;
+        return weight*getMaterialFactor()*1.5;
     }
 }
-
 class HouseholdWaste extends Waste {
     HouseholdWaste(double weight, String material) {
         super("Household", weight, material);
     }
-
     @Override
     public double calculateEmissions() {
-        return super.calculateEmissions()*0.9;
+        return weight*getMaterialFactor()*0.9;
     }
 }
-
 public class WasteManagement {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         Waste[] wastes=new Waste[100];
-        int wasteCount=0;
-
+        int wasteCount=0;   
+        String type;
         while (true) {
-            System.out.println("\nMenu:");
+            System.out.println("\n===Waste Emissions Calculator===");
             System.out.println("1. Add Waste");
             System.out.println("2. View Emissions Report");
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
             int choice=scanner.nextInt();
             scanner.nextLine();
-
             switch (choice) {
                 case 1:
                     if (wasteCount>=wastes.length) {
                         System.out.println("Error: Maximum capacity reached!");
                         break;
                     }
-                    System.out.print("Enter type (Industrial/Household): ");
-                    String type=scanner.nextLine();
+                    while (true) {
+                        System.out.print("Enter type (Industrial/Household): ");
+                        type=scanner.nextLine().trim();
+                        if (type.equalsIgnoreCase("Industrial") || type.equalsIgnoreCase("Household")) {
+                            break; 
+                        }
+                        System.out.println("Invalid type! Please enter either Industrial or Household");
+                    }
                     System.out.print("Enter weight (kg): ");
                     double weight=scanner.nextDouble();
                     scanner.nextLine();
                     System.out.print("Enter material (Plastic/Metal/Organic): ");
                     String material=scanner.nextLine();
-
                     if (type.equalsIgnoreCase("Industrial")) {
                         wastes[wasteCount]=new IndustrialWaste(weight, material);
                     } else if (type.equalsIgnoreCase("Household")) {
@@ -105,12 +104,12 @@ public class WasteManagement {
                     break;
 
                 case 3:
-                    System.out.println("Exiting program. Goodbye!");
+                    System.out.println("Exiting program...");
                     scanner.close();
                     return;
 
                 default:
-                    System.out.println("Invalid choice! Please try again.");
+                    System.err.println("Invalid choice!");
             }
         }
     }
