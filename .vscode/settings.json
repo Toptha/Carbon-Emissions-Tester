@@ -1,0 +1,52 @@
+{
+    "java.project.referencedLibraries": [
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-coyote.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-ko.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\catalina-tribes.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\catalina.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-websocket.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\el-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\catalina-ssi.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-fr.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\catalina-ant.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-util-scan.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\catalina-storeconfig.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-zh-CN.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\jsp-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-es.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\jakartaee-migration-1.0.9-shaded.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\servlet-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\catalina-ha.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\websocket-client-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-pt-BR.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\annotations-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\jaspic-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\mysql-connector-j-9.2.0.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\websocket-api.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\jasper.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-dbcp.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-ja.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\jasper-el.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-coyote-ffm.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-ru.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\ecj-4.27.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-jdbc.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-util.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-de.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-i18n-cs.jar",
+      "d:\\1st year\\2nd sem\\Java\\Domain\\lib\\tomcat-jni.jar"
+    ],
+    "java.project.sourcePaths": [
+      "src"
+    ],
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-21",
+        "path": "C:\\Program Files\\Java\\jdk-21",
+        "default": true
+      }
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.targetLevel": "21",
+    "java.project.sourceLevel": "21"
+}

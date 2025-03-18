@@ -1,6 +1,4 @@
-
 import java.util.Scanner;
-
 public class CFT {
     public static final double CO2perTree=22.0;
     public static final double CO2perCredit=1000.0;

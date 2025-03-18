@@ -1,7 +1,5 @@
-
 import airQuality.*;
 import java.util.*;
-
 public class AQT {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
@@ -10,7 +8,7 @@ public class AQT {
             int[][] breakpoints=defineBreakpoints(scanner);
             boolean exit=false;
             while(!exit) {
-                System.out.println("\n--- Air Quality Tester Menu ---");
+                System.out.println("\n--- Air Quality Tester ---");
                 System.out.println("1. Input Pollutant Concentration");
                 System.out.println("2. View Breakpoints");
                 System.out.println("3. Exit");
@@ -63,8 +61,7 @@ public class AQT {
     }
 
     public static int[][] defineBreakpoints(Scanner scanner) throws IllegalArgumentException, InputMismatchException {
-        System.out.println("Define AQI Breakpoints:");
-        System.out.print("Enter the number of ranges: ");
+        System.out.print("Enter the number of ranges for Calculations: ");
         int n=scanner.nextInt();
         if(n<= 0) {
             throw new IllegalArgumentException("Number of ranges must be positive.");
