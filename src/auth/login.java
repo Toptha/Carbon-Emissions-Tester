@@ -42,7 +42,7 @@ public class Login extends HttpServlet {
             } else {
                 response.getWriter().println("Invalid username or password");
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             // Log the exception instead of printing the stack trace to the response
             logger.log(Level.SEVERE, "Database error during login", e);
             response.getWriter().println("Login failed: Database error");
